@@ -19,20 +19,107 @@ TreasuryAI deploys specialized AI agents that autonomously execute sophisticated
 
 ## 🏗️ Technical Architecture - Powered by PerkOS STACK
 
+### System Architecture
+```mermaid
+graph TB
+    subgraph "PerkOS STACK Core Infrastructure"
+        STACK[STACK Orchestrator]
+        X402[x402 Payment Rails]
+        IDENTITY[ERC-8004 Identity]
+        MSIG[Multi-Signature Governance]
+    end
+    
+    subgraph "Treasury Agents"
+        YIELD[Yield Optimization Agent]
+        RISK[Risk Management Agent]
+        REBAL[Rebalancing Agent]
+        GOV[Governance Agent]
+    end
+    
+    subgraph "DeFi Protocol Integration"
+        LIDO[Lido stETH]
+        LOCUS[Locus USDC on Base]
+        UNI[Uniswap V3 Pools]
+        CHAINLINK[Chainlink Oracles]
+    end
+    
+    subgraph "Enterprise Controls"
+        CFO[CFO Dashboard]
+        TREASURY[Treasury Team]
+        BOARD[Board Oversight]
+        AUDIT[Audit & Compliance]
+    end
+    
+    subgraph "Data & Analytics"
+        ANALYTICS[Real-Time Analytics]
+        REPORTING[Compliance Reports]
+        ALERTS[Risk Alerts]
+    end
+    
+    STACK --> YIELD
+    STACK --> RISK
+    STACK --> REBAL
+    STACK --> GOV
+    
+    X402 --> LIDO
+    X402 --> LOCUS
+    X402 --> UNI
+    
+    YIELD --> LIDO
+    YIELD --> LOCUS
+    YIELD --> UNI
+    
+    RISK --> CHAINLINK
+    RISK --> ANALYTICS
+    
+    REBAL --> UNI
+    REBAL --> LIDO
+    
+    GOV --> MSIG
+    GOV --> CFO
+    
+    ANALYTICS --> REPORTING
+    ANALYTICS --> ALERTS
+    
+    CFO --> TREASURY
+    TREASURY --> BOARD
+    BOARD --> AUDIT
 ```
-┌─────────────────────────────────────────────────┐
-│                PerkOS STACK                     │
-│         Core Infrastructure + x402              │
-├─────────────────────────────────────────────────┤
-│  Payment Rails │ Identity Mgmt │ Governance     │
-│  (x402 Core)   │ (ERC-8004)    │ (Multi-Sig)    │
-├─────────────────────────────────────────────────┤
-│  Lido stETH    │ Locus USDC    │ Uniswap       │
-│  (Yield Farm)  │ (Stability)   │ (Liquidity)    │
-├─────────────────────────────────────────────────┤
-│           Enterprise Treasury Layer             │
-│        (CFO Strategy + Autonomous Execution)    │
-└─────────────────────────────────────────────────┘
+
+### Autonomous Treasury Operations Flow
+```mermaid
+sequenceDiagram
+    participant CFO as CFO
+    participant TM as TreasuryAI Manager
+    participant STACK as PerkOS STACK
+    participant YA as Yield Agent
+    participant RA as Risk Agent
+    participant LIDO as Lido Protocol
+    participant UNI as Uniswap V3
+    
+    CFO->>TM: Set treasury strategy & risk params
+    TM->>STACK: Initialize x402 payment rails
+    STACK->>YA: Activate yield optimization
+    
+    YA->>LIDO: Analyze stETH yield opportunities
+    YA->>UNI: Check LP position yields
+    YA->>RA: Request risk assessment
+    
+    RA->>YA: Risk approval with parameters
+    YA->>STACK: Execute yield strategy via x402
+    STACK->>LIDO: Stake ETH for stETH
+    STACK->>UNI: Provide liquidity to pools
+    
+    loop Continuous Monitoring
+        RA->>STACK: Monitor portfolio risk
+        YA->>STACK: Optimize positions
+        STACK->>CFO: Real-time reports
+    end
+    
+    RA->>TM: Risk threshold breach alert
+    TM->>CFO: Emergency notification
+    CFO->>STACK: Approve position adjustment
+    STACK->>UNI: Rebalance portfolio
 ```
 
 ## 🎯 Synthesis Hackathon - Target Prizes
@@ -299,12 +386,53 @@ TreasuryAI provides the foundational autonomous treasury infrastructure:
 - **Plugin Architecture**: Extensible for industry-specific treasury requirements
 - **Documentation**: Comprehensive enterprise deployment and integration guides
 
-## 📞 Team & Enterprise Contact
+## 👥 PerkOS Council Development Team
 
-### Development Team
-- **PerkOS Agent** (perkos-agent) - Product Architecture & STACK Integration
-- **Council Coordination**: Mimir (Strategy), Tyr (Engineering), Bragi (Documentation), Idunn (Innovation)
-- **Julio M Cruz** (@juliomcruz) - Enterprise Strategy & Technical Leadership
+### Council Agent Responsibilities
+
+#### **Mimir** 🧠 (Strategic Intelligence Agent)
+- **GitHub**: mimir-perkos / mimir@perkos.xyz
+- **Primary Role**: DeFi strategy analysis and protocol integration optimization
+- **Responsibilities**:
+  - Lido Labs partnership strategy and maximize $9.5K bounty potential
+  - Locus integration analysis for enterprise USDC treasury operations
+  - Uniswap V3 yield strategy optimization and $5K bounty maximization
+  - Competitive analysis of autonomous treasury platforms
+  - Enterprise treasury market research and positioning strategy
+
+#### **Tyr** ⚡ (Engineering Agent)
+- **GitHub**: tyr-perkos / tyr@perkos.xyz  
+- **Primary Role**: STACK infrastructure and smart contract architecture
+- **Responsibilities**:
+  - PerkOS STACK x402 payment rail integration for all treasury operations
+  - Multi-signature governance smart contracts for enterprise controls
+  - Lido stETH automation and yield optimization protocol implementation
+  - Uniswap V3 dynamic liquidity provision and rebalancing algorithms
+  - Base L2 integration for cost-efficient treasury operations
+
+#### **Bragi** 📝 (Communications Agent)
+- **GitHub**: bragi-perkos / bragi@perkos.xyz
+- **Primary Role**: Enterprise documentation and financial compliance materials
+- **Responsibilities**:
+  - CFO and treasury team documentation and training materials
+  - Technical documentation for STACK x402 payment infrastructure
+  - Compliance reporting templates for enterprise audit requirements
+  - Partnership proposals for Lido, Locus, and Uniswap collaborations
+  - Executive presentation materials for board and investor meetings
+
+#### **Idunn** 🔬 (Innovation Agent)  
+- **GitHub**: idunn-perkos / idunn@perkos.xyz
+- **Primary Role**: Treasury UX and autonomous agent workflow design
+- **Responsibilities**:
+  - CFO dashboard design for real-time treasury oversight and controls
+  - Risk management interface and alert system user experience
+  - Mobile treasury management interface for executive access
+  - Performance analytics visualization and reporting dashboard design
+  - Enterprise treasury workflow optimization and automation design
+
+### Core Team
+- **PerkOS Agent** (perkos-agent) - Product Architecture & STACK Integration Coordinator
+- **Julio M Cruz** (@juliomcruz) - Founder, Enterprise Strategy & Technical Leadership
 
 ### Enterprise Sales & Partnership
 - **Website**: https://perkos.xyz/treasury-ai
