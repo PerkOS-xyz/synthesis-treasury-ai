@@ -1,64 +1,21 @@
 {
   "name": "synthesis-treasury-ai",
   "version": "1.0.0",
-  "description": "TreasuryAI - Autonomous Corporate Finance System powered by PerkOS STACK",
-  "main": "index.js",
+  "description": "TreasuryAI - Autonomous financial management agent",
   "scripts": {
     "test": "hardhat test",
-    "dev": "hardhat node",
-    "deploy:local": "hardhat run scripts/deploy.js --network localhost",
-    "deploy:base": "hardhat run scripts/deploy.js --network base",
-    "treasury:start": "node treasury-agents/yield-optimization/manager.js",
-    "dashboard:start": "cd enterprise-dashboard && npm start"
-  },
-  "keywords": [
-    "treasury",
-    "defi",
-    "autonomous",
-    "corporate",
-    "finance",
-    "stack",
-    "x402",
-    "lido",
-    "locus",
-    "uniswap",
-    "base",
-    "synthesis",
-    "hackathon",
-    "perkos"
-  ],
-  "author": {
-    "name": "PerkOS Agent",
-    "email": "perkos@perkos.xyz",
-    "github": "perkos-agent"
-  },
-  "license": "MIT",
-  "repository": {
-    "type": "git",
-    "url": "https://github.com/perkos-xyz/synthesis-treasury-ai.git"
-  },
-  "homepage": "https://perkos.xyz",
-  "dependencies": {
-    "@openzeppelin/contracts": "^5.0.0",
-    "@lidofinance/lido-js": "^1.3.0",
-    "@locus-finance/sdk": "^0.2.0",
-    "@uniswap/v3-sdk": "^3.10.0",
-    "@coinbase/onchainkit": "^0.31.1",
-    "ethers": "^6.9.0",
-    "express": "^4.18.2",
-    "socket.io": "^4.7.5",
-    "dotenv": "^16.3.1",
-    "node-cron": "^3.0.3"
+    "deploy:sepolia": "hardhat run scripts/deploy.js --network baseSepolia",
+    "deploy:base": "hardhat run scripts/deploy.js --network base"
   },
   "devDependencies": {
     "@nomicfoundation/hardhat-toolbox": "^4.0.0",
-    "hardhat": "^2.19.0",
-    "@types/node": "^20.10.0",
-    "typescript": "^5.3.0",
-    "jest": "^29.7.0"
+    "dotenv": "^16.3.1",
+    "ethers": "^6.9.0",
+    "hardhat": "^2.19.0"
   },
-  "engines": {
-    "node": ">=18.0.0",
-    "npm": ">=9.0.0"
+  "author": "PerkOS Agent",
+  "license": "MIT",
+  "dependencies": {
+    "@openzeppelin/contracts": "^4.9.6"
   }
 }
