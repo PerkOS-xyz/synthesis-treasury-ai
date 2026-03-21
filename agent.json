@@ -1,0 +1,36 @@
+{
+  "name": "TreasuryAI", 
+  "description": "Autonomous financial management agent with DeFi and yield optimization capabilities",
+  "version": "1.0.0",
+  "agent": {
+    "identity": {
+      "type": "ERC-8004",
+      "ens": "treasuryai.perkos.eth",
+      "capabilities": ["defi-operations", "yield-farming", "risk-assessment"]
+    },
+    "skills": {
+      "primary": "defi-operations",
+      "available": [
+        "skills/defi-operations",
+        "skills/yield-farming",
+        "skills/risk-assessment", 
+        "skills/multi-protocol"
+      ]
+    },
+    "plugins": {
+      "enabled": [
+        "plugins/lido-staking",
+        "plugins/uniswap-trading",
+        "plugins/celo-payments"
+      ]
+    },
+    "contracts": {
+      "main": "contracts/TreasuryVault.sol",
+      "governance": "contracts/MultiSigGovernance.sol"
+    },
+    "bounties": {
+      "target": ["lido", "uniswap", "locus", "celo"],
+      "estimated": "$22,500"
+    }
+  }
+}
