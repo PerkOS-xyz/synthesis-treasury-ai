@@ -34,6 +34,14 @@ graph TB
         RISK[Risk Management Agent]
         REBAL[Rebalancing Agent]
         GOV[Governance Agent]
+        AI[Multi-Model AI Intelligence]
+    end
+    
+    subgraph "Bankr LLM Gateway"
+        CLAUDE[Claude: Risk Analysis]
+        GPT[GPT: Market Signals]
+        GEMINI[Gemini: Optimization]
+        BANKR_API[Bankr API Gateway]
     end
     
     subgraph "DeFi Protocol Integration"
@@ -60,6 +68,16 @@ graph TB
     STACK --> RISK
     STACK --> REBAL
     STACK --> GOV
+    STACK --> AI
+    
+    AI --> BANKR_API
+    BANKR_API --> CLAUDE
+    BANKR_API --> GPT
+    BANKR_API --> GEMINI
+    
+    CLAUDE --> RISK
+    GPT --> YIELD
+    GEMINI --> REBAL
     
     X402 --> LIDO
     X402 --> LOCUS
@@ -142,7 +160,14 @@ sequenceDiagram
 - **Treasury Market Making**: Corporate assets earning fees through strategic LP positions
 - **Rebalancing Automation**: Real-time position optimization based on market conditions
 
-**Total Target: $17,500**
+### Bankr Bounty: $5,000
+**Focus**: Multi-model AI intelligence with self-sustaining treasury economics
+- **Multi-Model Treasury Intelligence**: Claude for risk analysis, GPT for market signals, Gemini for optimization
+- **Self-Sustaining AI Operations**: Treasury yield funding AI inference costs
+- **Automated Model Selection**: Best AI model for specific treasury decisions
+- **Cost Optimization**: AI inference budget optimization through treasury performance
+
+**Total Target: $22,500**
 
 ## 🤖 Core Features Powered by PerkOS STACK
 
@@ -174,7 +199,15 @@ sequenceDiagram
 - Multi-signature approval workflows for large treasury movements and strategy changes
 - Compliance reporting integration for enterprise accounting and audit requirements
 
-### 5. Real-Time Treasury Analytics & Reporting
+### 5. Multi-Model AI Treasury Intelligence
+**Bankr LLM Gateway Integration**: Specialized AI models for optimal treasury decisions
+- Claude Opus for conservative risk analysis and strategic planning
+- GPT-5.2 for aggressive market analysis and trading signal generation
+- Gemini Pro for balanced portfolio optimization and rebalancing strategies
+- Self-sustaining economics: treasury yield funds AI inference costs automatically
+- Multi-model consensus algorithms for high-confidence treasury decisions
+
+### 6. Real-Time Treasury Analytics & Reporting
 **Enterprise Transparency**: Complete visibility into autonomous treasury performance
 - Live P&L tracking across all DeFi positions with enterprise accounting standards
 - Risk metrics monitoring with real-time alerts for parameter breaches
@@ -250,7 +283,8 @@ synthesis-treasury-ai/
 │   ├── yield-optimization/      # Lido + USDC + LP yield strategies
 │   ├── risk-management/         # Real-time risk monitoring
 │   ├── rebalancing-automation/  # Uniswap position management
-│   └── governance-execution/    # Multi-sig workflow automation
+│   ├── governance-execution/    # Multi-sig workflow automation
+│   └── bankr-integration/       # Multi-model AI intelligence via Bankr LLM Gateway
 ├── defi-integrations/          # Protocol-specific integrations
 │   ├── lido-steth/             # Automated staking and yield farming
 │   ├── locus-usdc/             # Enterprise USDC treasury operations
@@ -448,7 +482,7 @@ TreasuryAI provides the foundational autonomous treasury infrastructure:
 
 This project doesn't just address treasury management - it creates the autonomous financial infrastructure that enables enterprise-grade DeFi adoption at scale.
 
-**Target Prizes: $17,500 (Lido Labs $9.5K + Locus $3K + Uniswap $5K)**  
+**Target Prizes: $22,500 (Lido Labs $9.5K + Locus $3K + Uniswap $5K + Bankr $5K)**  
 **Enterprise Value: Complete autonomous treasury platform with multi-protocol optimization**
 
 ---

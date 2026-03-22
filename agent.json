@@ -6,7 +6,7 @@
     "identity": {
       "type": "ERC-8004",
       "ens": "treasuryai.perkos.eth",
-      "capabilities": ["defi-operations", "yield-farming", "risk-assessment"]
+      "capabilities": ["defi-operations", "yield-farming", "risk-assessment", "multi-model-intelligence"]
     },
     "skills": {
       "primary": "defi-operations",
@@ -14,14 +14,16 @@
         "skills/defi-operations",
         "skills/yield-farming",
         "skills/risk-assessment", 
-        "skills/multi-protocol"
+        "skills/multi-protocol",
+        "skills/bankr-integration"
       ]
     },
     "plugins": {
       "enabled": [
         "plugins/lido-staking",
         "plugins/uniswap-trading",
-        "plugins/celo-payments"
+        "plugins/celo-payments",
+        "plugins/bankr-llm-gateway"
       ]
     },
     "contracts": {
@@ -29,8 +31,8 @@
       "governance": "contracts/MultiSigGovernance.sol"
     },
     "bounties": {
-      "target": ["lido", "uniswap", "locus", "celo"],
-      "estimated": "$22,500"
+      "target": ["lido", "uniswap", "locus", "celo", "bankr"],
+      "estimated": "$27,500"
     }
   }
 }
