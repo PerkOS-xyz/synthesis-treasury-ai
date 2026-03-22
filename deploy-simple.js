@@ -6,7 +6,7 @@ async function main() {
     
     // Setup
     const provider = new ethers.JsonRpcProvider('https://sepolia.base.org');
-    const privateKey = 'dfdc9dd7dab0abdc84a90a47ccc90a42bdeaf291530bf3839efcc5676d26a80f';
+    const privateKey = 'PRIVATE_KEY_REDACTED';
     const wallet = new ethers.Wallet(privateKey, provider);
     
     console.log('Deployer:', wallet.address);
