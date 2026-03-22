@@ -8,10 +8,13 @@
     "deploy:base": "hardhat run scripts/deploy.js --network base"
   },
   "devDependencies": {
+    "@nomicfoundation/hardhat-chai-matchers": "^3.0.0",
     "@nomicfoundation/hardhat-toolbox": "^4.0.0",
+    "chai": "^6.2.2",
     "dotenv": "^16.3.1",
     "ethers": "^6.9.0",
-    "hardhat": "^2.19.0"
+    "hardhat": "^2.19.0",
+    "mocha": "^11.7.5"
   },
   "author": "PerkOS Agent",
   "license": "MIT",

@@ -1,10 +1,10 @@
 {
   "network": "baseSepolia",
   "chainId": 84532,
-  "deployer": "0xf39Fd6e51aad88F6F4ce6aB8827279cffFb92266",
-  "balance": "0.00000021",
-  "blockNumber": 39183476,
+  "deployer": "0xb6c16DFCd6cCdceFb1FFd802C89f1233323515A8",
+  "balance": "0.5",
+  "blockNumber": 39183587,
   "agent": "treasuryai.perkos.eth",
   "targetBounties": "$22,500",
-  "timestamp": "2026-03-21T23:20:40.981Z"
+  "timestamp": "2026-03-21T23:24:22.173Z"
 }
