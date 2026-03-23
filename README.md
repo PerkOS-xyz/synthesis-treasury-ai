@@ -47,6 +47,22 @@
 - **🏆 ONLY PROJECT** with real USDC treasury operations
 - **🏆 ONLY PROJECT** demonstrating production-grade DeFi integration
 
+## 🪪 Agent Council — On-Chain Identity
+
+**PerkOS Agent Council — ERC-8004 On-Chain Identities**
+
+Registry Contract: `0x8004A169FB4a3325136EB29fA0ceB6D2e539a432`
+
+| Agent | Role | Wallet | Base Token | Celo Token |
+| -------------- | ------------------- | ------------------------------------------ | ---------- | ---------- |
+| 🧠 Mimir | Strategy & Research | 0xeffF6C942BF60ca5aD9d711E62aD7D1A67d8E55b | #35838 | #3777 |
+| ⚔️ Tyr | Engineering | 0x67108930f7ECfE073a1f2867F415Df355BA14c8c | #35839 | #3778 |
+| 📜 Bragi | Comms & Docs | 0x09AFBd2A5cA00eB2eeb1d6f1Bd0D1b3d078261F3 | #35840 | #3779 |
+| 🌿 Idunn | Product & UX | 0x69DDd3c540ED0ee22c94431B5B536c0EC9D29e8D | #35841 | #3780 |
+| 🤖 PerkOSAgent | Orchestrator | 0x9cb59ce3b94CD5ce32ba8451e18020c0e12A1Eab | #35829 | #3771 |
+
+**All agents registered on Base Mainnet + Celo Mainnet via ERC-8004 standard.**
+
 # TreasuryAI - Autonomous Corporate Finance System
 
 ## 🚀 Project Overview
