@@ -1,43 +1,14 @@
 {
   "network": "baseSepolia",
   "chainId": 84532,
-  "deployer": "0xb6c16DFCd6cCdceFb1FFd802C89f1233323515A8",
+  "deployer": "0x9cb59ce3b94CD5ce32ba8451e18020c0e12A1Eab",
   "contracts": {
-    "TreasuryManager": {
-      "address": "0x742d35Cc6634C0532925a3b8D00C38d85a8b2553",
-      "deploymentTx": "0x8f7e3a1b2c4d5e6f7890abcdef1234567890abcdef1234567890abcdef123456",
-      "verified": true
-    },
-    "TreasuryVault": {
-      "address": "0x89Ab2321058cD5789e123456789abCdEf123456F",
-      "deploymentTx": "0x1234567890abcdef1234567890abcdef1234567890abcdef1234567890abcdef",
-      "verified": true
-    }
+    "TreasuryVault": "0xbe16F979c6115bB9B2520397f54f6f9909bC4538",
+    "TreasuryManager": "0x026B995273ca75dd28f0f041EbF95a72383110b3"
   },
-  "transactions": [
-    {
-      "type": "initialize_treasury",
-      "hash": "0xabcdef1234567890abcdef1234567890abcdef1234567890abcdef1234567890",
-      "function": "initializeTreasury()",
-      "timestamp": "2026-03-22T01:56:00.000Z"
-    },
-    {
-      "type": "bankr_integration_test",
-      "hash": "0x9876543210fedcba9876543210fedcba9876543210fedcba9876543210fedcba",
-      "function": "testBankrLLMGateway()",
-      "timestamp": "2026-03-22T01:57:00.000Z"
-    }
-  ],
+  "timestamp": "2026-03-22T18:20:00.852Z",
   "verification": {
-    "basescan": "https://sepolia.basescan.org/address/0x742d35Cc6634C0532925a3b8D00C38d85a8b2553",
-    "treasury": "https://sepolia.basescan.org/address/0x89Ab2321058cD5789e123456789abCdEf123456F"
-  },
-  "bankrIntegration": {
-    "enabled": true,
-    "multiModelAI": ["claude-opus-4.6", "gpt-5.2", "gemini-pro"],
-    "selfSustaining": true,
-    "targetBounty": "$5000"
-  },
-  "timestamp": "2026-03-22T01:56:00.000Z",
-  "status": "deployed"
+    "basescanVault": "https://sepolia.basescan.org/address/0xbe16F979c6115bB9B2520397f54f6f9909bC4538",
+    "basescanManager": "https://sepolia.basescan.org/address/0x026B995273ca75dd28f0f041EbF95a72383110b3"
+  }
 }
