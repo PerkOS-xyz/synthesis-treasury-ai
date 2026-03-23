@@ -37,7 +37,10 @@
 
 ### 🎬 **LIVE DEMO TRANSACTIONS:**
 **Real Base Mainnet treasury operations:**
-- **Treasury Deposit:** `0x6bf7802be7f8a35d6f6e5a034269127d487977333b9fb171a5eff943e34da0fd`
+- **Latest Deposit:** `0x9b13c090c3dfeefa16efd4c01b4a27f16cddb235889af788485d4792e1f3d088`
+  - Deposited 0.00001 ETH on March 23, 2026
+  - Block: 43759366 | Gas Used: 27,837
+- **Previous Deposit:** `0x6bf7802be7f8a35d6f6e5a034269127d487977333b9fb171a5eff943e34da0fd`
   - Deposited 0.0001 ETH to corporate treasury vault
   - Demonstrates autonomous treasury management capability
 
