@@ -21,6 +21,12 @@
 **📈 Basescan (TRANSACTION HISTORY):**
 - **💰 TreasuryVault:** https://basescan.org/address/0x95BbaD1daa5f2a17BF225084c075E4e128226CFC
 
+### 📋 **SOURCE CODE (GitHub):**
+- **💰 TreasuryVault Contract:** https://github.com/PerkOS-xyz/synthesis-treasury-ai/blob/main/contracts/TreasuryVault.sol
+- **🏗️ Treasury Manager:** https://github.com/PerkOS-xyz/synthesis-treasury-ai/blob/main/contracts/TreasuryManagerSimple.sol  
+- **📁 All Contracts:** https://github.com/PerkOS-xyz/synthesis-treasury-ai/tree/main/contracts
+- **🔧 Smart Contracts Directory:** https://github.com/PerkOS-xyz/synthesis-treasury-ai/tree/main/smart-contracts
+
 ### 📊 **VERIFICATION STATUS:**
 - **Deployment:** ✅ **SUCCESSFUL** on Base Mainnet
 - **Functionality:** ✅ **CONTRACTS FULLY OPERATIONAL**
